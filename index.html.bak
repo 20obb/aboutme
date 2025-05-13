@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سرمد - الصفحة الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="rtl">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">/</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="language-toggle" class="language-toggle">
+            <div class="toggle-icon">
+                <span class="globe-icon">🌐</span>
+            </div>
+            <div class="toggle-text">
+                <span id="current-lang">العربية</span>
+            </div>
+        </button>
+    </div>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>مرحباً 👋 أنا سرمد</h1>
+                <p>مبرمج وشغوف بعالم التقنية واكتشاف الأدوات الجديدة</p>
+            </div>
+
+            <section id="about" class="about-section">
+                <h2 class="section-title">من أنا؟</h2>
+                <div class="section-content">
+                    <p>أنا سرمد، مبرمج وشغوف بعالم التقنية واكتشاف الأدوات الجديدة. أحب أبحث عن ثغرات وأتعمق بلغات البرمجة وأنظمة المواقع. هدفي أكون شخص مؤثر بعالم التكنولوجيا وأقدم شي يغير العالم للأفضل.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2 class="section-title">🧠 مهاراتي</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <h3>💻 لغات البرمجة</h3>
+                        <p>Python (قوي بيها)، JavaScript (مبتدئ)، C</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>🌐 تصميم المواقع</h3>
+                        <p>بداية ممتازة وجاري التطور</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>🛡️ البحث عن الثغرات</h3>
+                        <p>عندي خبرة بصيد الثغرات بمواقع وتطبيقات الويب</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2 class="section-title">🛠 مشاريعي</h2>
+                <div class="section-content">
+                    <div class="project-item">
+                        <h3>🤖 HiLoader</h3>
+                        <p>بوت تيليجرام لتحميل محتوى من السوشيال ميديا. مشروع بسيط لكن يخدم الناس بطريقة عملية، وأفتخر بيه كبداية قوية.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interests" class="interests-section">
+                <h2 class="section-title">🎮 اهتماماتي</h2>
+                <div class="section-content">
+                    <p>أحب الألعاب والبرمجة، وأقضي وقتي بين التعلّم والتجريب بكل شي يفيدني.</p>
+                    <p>أتعلم من أي مصدر مفيد، سواء كان يوتيوب، مواقع، أو دورات، أهم شي يكون مصدره موثوق وينشر معلومات صحيحة.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">📬 تواصل وياي</h2>
+                <div class="section-content">
+                    <p>Instagram أو Telegram، راسلني هناك بكل بساطة ✌️</p>
+                    
+                    <div class="social-buttons">
+                        <a href="https://t.me/rejectthenorm" target="_blank" class="social-link">
+                            <div class="social-button">
+                                <span>TELEGRAM</span>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/rejectthefs" target="_blank" class="social-link">
+                            <div class="social-button">
+                                <span>INSTAGRAM</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>شكراً لزيارتك موقعي الشخصي</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من أنا</a>
+                <a href="#skills">مهاراتي</a>
+                <a href="#projects">مشاريعي</a>
+                <a href="#contact">تواصل معي</a>
+            </div>
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> سرمد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

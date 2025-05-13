@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سرمد - الصفحة الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="rtl dark-theme"> <!-- Default to dark theme -->
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero-section">/</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="language-toggle" class="language-toggle">
+            <div class="toggle-icon">
+                <span class="globe-icon">🌐</span>
+            </div>
+            <div class="toggle-text">
+                <span id="current-lang">العربية</span>
+            </div>
+        </button>
+        <!-- Theme toggle button will be handled by script_with_backtotop.js -->
+    </div>
+
+    <main class="main-content">
+        <section id="hero-section" class="hero-palera">
+            <div class="hero-palera-content">
+                <h1 data-translate="heroTitle">مرحباً 👋 أنا سرمد</h1>
+                <p data-translate="heroSubtitleShort">مبرمج وشغوف بعالم التقنية واكتشاف الأدوات الجديدة. أحب أبحث عن ثغرات وأتعمق بلغات البرمجة وأنظمة المواقع. هدفي أكون شخص مؤثر بعالم التكنولوجيا وأقدم شيء يغير العالم للأفضل.</p>
+            </div>
+        </section>
+
+        <div class="cards-container">
+            <!-- Card for Skills -->
+            <div class="card" id="skills-card">
+                <h2 class="card-title" data-translate="skillsTitle"><i class="fas fa-brain"></i> 🧠 مهاراتي</h2>
+                <div class="card-content skills-list">
+                    <div class="skill-category">
+                        <h3 data-translate="skillsProgrammingLanguagesTitle"><i class="fas fa-code"></i> لغات البرمجة</h3>
+                        <ul>
+                            <li data-translate="skillsPython">Python</li>
+                            <li data-translate="skillsFullStack">Full-stack Web Development</li>
+                            <li data-translate="skillsC">C</li>
+                            <li data-translate="skillsJava">Java</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsLinuxTitle"><i class="fab fa-redhat"></i> استخدام Linux (Red Hat)</h3>
+                        <p data-translate="skillsLinuxDesc">توزيعة Red Hat Linux (مع أيقونة رسمية وتصريح رسمي Certification)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsArduinoTitle"><i class="fas fa-microchip"></i> برمجة Arduino</h3>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsEsp32Title"><i class="fas fa-microchip"></i> برمجة ESP32</h3>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsIosTweaksTitle"><i class="fab fa-apple"></i> تعديل تطبيقات iOS</h3>
+                        <ul data-translate="skillsIosTweaksDesc">
+                            <li>تطوير Tweaks وأدوات جيلبريك</li>
+                            <li>خبرة في Xcode, Swift, Objective-C</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsVpnTitle"><i class="fas fa-network-wired"></i> شبكات VPN وGeo-Spoofing</h3>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsSiriTitle"><i class="fas fa-bolt"></i> اختصارات Siri وiOS Shortcuts</h3>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-translate="skillsBugBountyTitle"><i class="fas fa-search"></i> البحث عن الثغرات</h3>
+                        <p data-translate="skillsBugBountyDesc">خبرة بصيد الثغرات في مواقع وتطبيقات الويب</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card for Projects Title -->
+            <div class="card section-title-card">
+                 <h2 class="card-title" data-translate="projectsTitle"><i class="fas fa-tools"></i> 🛠 مشاريعي</h2>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="card project-card" id="project-hiloader">
+                <h3 class="card-subtitle"><i class="fab fa-telegram-plane"></i> HiLoader</h3>
+                <div class="card-content">
+                    <p data-translate="projectHiLoaderDesc">بوت Telegram لتحميل محتوى من السوشيال ميديا. مشروع بسيط وعملي كبداية قوية.</p>
+                    <a href="HiLoader_README.md" target="_blank" class="readme-link" data-translate="readMore">اقرأ المزيد (README)</a>
+                </div>
+            </div>
+
+            <div class="card project-card" id="project-gnuloader">
+                <h3 class="card-subtitle"><i class="fab fa-tiktok"></i> GNU Loader Tweak (iPhone)</h3>
+                <div class="card-content">
+                    <p data-translate="projectGNULoaderDesc">نسخة مفتوحة المصدر معدّلة من TikTok لأجهزة iOS.</p>
+                    <strong data-translate="projectGNULoaderFeaturesTitle">مزايا رئيسية:</strong>
+                    <ul data-translate="projectGNULoaderFeaturesList">
+                        <li>تحميل الفيديوهات والصوتيات (MP4, MOV) بدقة تصل إلى 4K.</li>
+                        <li>تشغيل في الخلفية (Background Play).</li>
+                        <li>استخراج الرسائل والردود المخفية بدون علم الطرف الآخر وتصديرها PDF.</li>
+                        <li>تغيير الموقع الجغرافي/البلد الافتراضي عبر واجهة سهلة أو بإدخال إحداثيات يدوياً.</li>
+                        <li>وضع “التصفح المتخفّي” Stealth Mode لمنع تسجيل التفاعلات.</li>
+                        <li>تكامل مع Siri Shortcuts.</li>
+                        <li>سمة Red Hat (Dark Theme) متوافقة مع iOS Dark Mode.</li>
+                    </ul>
+                    <p><strong data-translate="projectGNULoaderTechTitle">التقنيات:</strong> <span data-translate="projectGNULoaderTechList">Swift, UIKit, Alamofire, CoreLocation & VPN Framework, SQLite/Realm.</span></p>
+                    <a href="GNULoaderTweak_README.md" target="_blank" class="readme-link" data-translate="readMore">اقرأ المزيد (README)</a>
+                </div>
+            </div>
+
+            <div class="card project-card" id="project-evilgram">
+                <h3 class="card-subtitle"><i class="fab fa-telegram"></i> Evilgram (iPhone)</h3>
+                <div class="card-content">
+                    <p data-translate="projectEvilgramDesc">نسخة Telegram بشبه TikTok للأيفون.</p>
+                    <p><strong data-translate="projectEvilgramFeaturesTitle">مزايا:</strong> <span data-translate="projectEvilgramFeaturesList">عرض الرسائل المحذوفة، عرض الصور ذاتية التدمير، واجهة “For You”، تشغيل الفيديو/الصوت في الخلفية.</span></p>
+                    <p><strong data-translate="projectEvilgramTechTitle">التقنيات:</strong> <span data-translate="projectEvilgramTechList">Swift, Telegram API, CocoaPods.</span></p>
+                    <a href="Evilgram_README.md" target="_blank" class="readme-link" data-translate="readMore">اقرأ المزيد (README)</a>
+                </div>
+            </div>
+
+            <div class="card project-card" id="project-webprivacy">
+                <h3 class="card-subtitle"><i class="fas fa-shield-alt"></i> Web Privacy Insights</h3>
+                <div class="card-content">
+                    <p data-translate="projectWebPrivacyDesc">أداة ويب لتحليل خصوصية المواقع.</p>
+                    <p><strong data-translate="projectWebPrivacyFuncTitle">وظائف:</strong> <span data-translate="projectWebPrivacyFuncList">جمع وتحليل الكوكيز، بصمة JavaScript، رؤوس HTTP. استخدام FastAPI للـ Back-end وTotalVirus API لفحص الروابط. إصدار تقرير أمان (Security Score).</span></p>
+                    <p><strong data-translate="projectWebPrivacyTechTitle">التقنيات:</strong> <span data-translate="projectWebPrivacyTechList">Python, FastAPI, PostgreSQL, Docker.</span></p>
+                    <a href="WebPrivacyInsights_README.md" target="_blank" class="readme-link" data-translate="readMore">اقرأ المزيد (README)</a>
+                </div>
+            </div>
+
+            <div class="card project-card" id="project-fetcherosint">
+                <h3 class="card-subtitle"><i class="fas fa-user-secret"></i> Fetcher OSINT</h3>
+                <div class="card-content">
+                    <p data-translate="projectFetcherDesc">أداة OSINT مفتوحة المصدر للبحث عن المستخدمين.</p>
+                    <ul data-translate="projectFetcherSearchTypes">
+                        <li><strong data-translate="projectFetcherNormalSearch">بحث عادي:</strong> معلومات عامة عن الحساب (بروفايل، تاريخ التفعيل).</li>
+                        <li><strong data-translate="projectFetcherDeepSearch">بحث عميق:</strong> استخراج سجل الرسائل والتفاعلات الكاملة.</li>
+                    </ul>
+                    <p><strong data-translate="projectFetcherTechTitle">التقنيات:</strong> <span data-translate="projectFetcherTechList">Python, Requests, BeautifulSoup, SQLite.</span></p>
+                    <a href="FetcherOSINT_README.md" target="_blank" class="readme-link" data-translate="readMore">اقرأ المزيد (README)</a>
+                </div>
+            </div>
+
+            <!-- Card for Interests -->
+            <div class="card" id="interests-card">
+                <h2 class="card-title" data-translate="interestsTitle"><i class="fas fa-gamepad"></i> 🎮 اهتماماتي</h2>
+                <div class="card-content">
+                    <p data-translate="interestsText1">الألعاب والبرمجة، وقتي مقسّم بين التعلم والتجريب.</p>
+                    <p data-translate="interestsText2">التعلم من مصادر موثوقة: YouTube، منصات تعليمية، دورات احترافية.</p>
+                    <p data-translate="interestsText3">احب استعمال اي توزيعه مبنيه على لينكس.</p>
+                </div>
+            </div>
+
+            <!-- Card for Contact -->
+            <div class="card" id="contact-card">
+                <h2 class="card-title" data-translate="contactTitle"><i class="fas fa-envelope"></i> 📬 تواصل وياي</h2>
+                <div class="card-content">
+                    <p data-translate="contactText">Instagram أو Telegram، راسلني هناك بكل بساطة ✌️</p>
+                    <div class="social-buttons-palera">
+                        <a href="https://t.me/rejectthenorm" target="_blank" class="social-button">
+                            <i class="fab fa-telegram-plane"></i>&nbsp; <span data-translate="telegramButton">TELEGRAM</span>
+                        </a>
+                        <a href="https://instagram.com/rejectthefs" target="_blank" class="social-button">
+                            <i class="fab fa-instagram"></i>&nbsp; <span data-translate="instagramButton">INSTAGRAM</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .cards-container ends -->
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p data-translate="footerThanks">شكراً لزيارتك موقعي الشخصي</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero-section" data-translate="navHome">الرئيسية</a>
+                <a href="#skills-card" data-translate="navSkills">مهاراتي</a>
+                <a href="#project-hiloader" data-translate="navProjects">مشاريعي</a>
+                <a href="#contact-card" data-translate="navContact">تواصل معي</a>
+            </div>
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> <span data-translate="copyrightName">سرمد</span>. <span data-translate="copyrightRights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <button class="theme-toggle" id="theme-toggle-button" title="Toggle theme">🌙</button> <!-- Ensure ID for JS hook -->
+
+    <script src="script_with_backtotop.js"></script>
+</body>
+</html>
+
